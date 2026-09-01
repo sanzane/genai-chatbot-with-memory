@@ -85,7 +85,7 @@ python main.py
 | Variable | Required | Default | Description |
 |---|---|---|---|
 | `GEMINI_API_KEY` | **Yes** | — | Your Google Gemini API key |
-| `GEMINI_MODEL` | No | `gemini-2.5-flash` | Model identifier to use |
+| `GEMINI_MODEL` | No | `gemini-3.5-flash-lite` | Model identifier to use |
 | `GEMINI_MAX_TOKENS` | No | `1024` | Max output tokens generated per reply |
 | `GEMINI_TEMPERATURE` | No | `0.7` | Sampling temperature (0.0–2.0) |
 | `MAX_HISTORY_MESSAGES` | No | `50` | Max messages kept in the sliding-window memory |
