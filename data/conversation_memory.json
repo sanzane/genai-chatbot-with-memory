@@ -62,5 +62,45 @@
   {
     "role": "assistant",
     "content": "Got it, Sai. Here are the exact facts you told me, with no inferences or assumptions:\n\n* Your name is Sai.\n* You have a dog whose name is Max.\n* You play Minecraft everyday.\n* When you play Minecraft, you always drink Milo.\n* Your hometown is Chennai."
+  },
+  {
+    "role": "user",
+    "content": "hi"
+  },
+  {
+    "role": "assistant",
+    "content": "Hi Sai! How are you doing today?"
+  },
+  {
+    "role": "user",
+    "content": "where am i?"
+  },
+  {
+    "role": "assistant",
+    "content": "Based on what you told me earlier, your hometown is Chennai."
+  },
+  {
+    "role": "user",
+    "content": "do i have any pets in my home?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, you have a dog, and his name is Max."
+  },
+  {
+    "role": "user",
+    "content": "i like to do tasks like photography, fishing"
+  },
+  {
+    "role": "assistant",
+    "content": "Got it, Sai! I've added photography and fishing to your list of interests. \n\nJust to keep things strictly to the facts you explicitly shared—you told me your name is Sai, your hometown is Chennai, you have a dog named Max, you play Minecraft everyday while always drinking Milo, and now, you like to do tasks like photography and fishing!"
+  },
+  {
+    "role": "user",
+    "content": "which game do i play alot?"
+  },
+  {
+    "role": "assistant",
+    "content": "Based on what you told me, you play Minecraft every day."
   }
 ]

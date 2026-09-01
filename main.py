@@ -14,7 +14,14 @@ from __future__ import annotations
 import logging
 import sys
 
-from chatbot import GeminiChatbot, Config, ConversationMemory, run_cli
+from pathlib import Path
+
+from chatbot import (
+    GeminiChatbot,
+    Config,
+    run_cli,
+)
+from chatbot.memory import PersistentMemory
 from chatbot.exceptions import ConfigurationError
 
 
@@ -46,7 +53,14 @@ def main() -> int:
         print(f"Configuration error: {exc}", file=sys.stderr)
         return 1
 
-    memory = ConversationMemory(max_messages=config.max_history_messages)
+    # Use a persistent memory file located relative to this script so
+    # memory survives restarts regardless of the current working dir.
+    base_dir = Path(__file__).parent
+    memory_file = base_dir / "data" / "conversation_memory.json"
+    memory = PersistentMemory(
+        max_messages=config.max_history_messages,
+        memory_file=memory_file,
+    )
     bot = GeminiChatbot(config=config, memory=memory)
 
     logger.info(
