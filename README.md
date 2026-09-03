@@ -1,4 +1,4 @@
-# Gemini Chatbot with Memory
+# Chatbot with Memory
 
 A production-ready, memory-aware conversational chatbot built on the official
 [Google Gen AI Python SDK](https://github.com/googleapis/python-genai)
@@ -106,51 +106,15 @@ python main.py
 
 ```
 ============================================================
- Gemini Chatbot with Memory  —  type /help for commands
+ Chatbot with Memory  —  type /help for commands
 ============================================================
 Type your message and press Enter. Conversation context is kept for the whole session.
 
-You: Hi, I'm Priya and I'm planning a trip to Kyoto next spring.
-Gemini: Hi Priya! Kyoto in spring is a wonderful choice — you'll likely catch
-the cherry blossoms if you go in late March to early April. Are you
-thinking of a specific week, and is this a solo trip or with others?
+You: Hi, I'm Sai.
+Chatbot: Hi Sai! How can I help you today?
+You: Do you know my dog's name?
+Chatbox: Yes. You have a dog named Max. He's a German Shepherd.
 
-You: It'll be with my sister. We're both really into traditional tea ceremonies.
-Gemini: That's a great pairing with Kyoto — it's one of the best places in
-the world for an authentic tea ceremony experience. A couple of options for
-you and your sister: Camellia Garden near Kiyomizu-dera offers ceremonies in
-English, and En Tea House does a more intimate, traditional setting. Want me
-to sketch out an itinerary built around that?
-
-You: Yes please, and remember we don't eat meat.
-Gemini: Got it — I'll keep both the tea-ceremony focus and vegetarian dining
-in mind. Here's a rough 3-day outline for you and your sister:
-
-Day 1: Arrive, settle in near Gion, evening walk through the historic
-streets, vegetarian kaiseki dinner.
-Day 2: Morning tea ceremony at Camellia Garden, afternoon at Kiyomizu-dera
-and the nearby craft shops, vegetarian-friendly udon for dinner.
-Day 3: Fushimi Inari shrine at sunrise (before the crowds), tea ceremony at
-En Tea House in the afternoon, farewell dinner at a vegetarian shojin-ryori
-restaurant.
-
-Want me to add day trips outside the city, like Nara or Arashiyama?
-
-You: What was the name of that first tea house you mentioned again?
-Gemini: The first one I mentioned was Camellia Garden, near Kiyomizu-dera —
-that's the one offering ceremonies in English, which I suggested for Day 2
-of your itinerary with your sister.
-
-You: /history
---- conversation history ---
-You: Hi, I'm Priya and I'm planning a trip to Kyoto next spring.
-Gemini: Hi Priya! Kyoto in spring is a wonderful choice...
-You: It'll be with my sister. We're both really into traditional tea ceremonies.
-Gemini: That's a great pairing with Kyoto...
-You: Yes please, and remember we don't eat meat.
-Gemini: Got it — I'll keep both the tea-ceremony focus...
-You: What was the name of that first tea house you mentioned again?
-Gemini: The first one I mentioned was Camellia Garden...
 -----------------------------
 
 You: /exit
